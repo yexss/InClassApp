@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InClassApp</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="sex">性别</string>
+    <string name="java">java</string>
+    <string name="python">python</string>
+    <string name="math">高等数学</string>
+    <string name="submit">提交</string>
+    <string name="bmi">BMI 计算器</string>
+    <string name="input_weight">input weight</string>
+    <string name="input_height">input height</string>
+</resources>

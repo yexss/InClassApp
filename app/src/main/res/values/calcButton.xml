@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="calcBtn">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_margin">3dp</item>
+
+    </style>
+    <string name="calcButton_add">+</string>
+    <string name="calcButton_sub">-</string>
+    <string name="calcButton_mul">×</string>
+    <string name="calcButton_div">÷</string>
+    <string name="calcButton_rem">%</string>
+    <string name="calcButton_dec">.</string>
+    <string name="calcButton_eq">=</string>
+    <string name="calcButton_clr">C</string>
+    <string name="calcButton_pow">pow</string>
+    <string name="calcButton_back">B</string>
+
+    <string name="calcButton_0">0</string>
+    <string name="calcButton_1">1</string>
+    <string name="calcButton_2">2</string>
+    <string name="calcButton_3">3</string>
+    <string name="calcButton_4">4</string>
+    <string name="calcButton_5">5</string>
+    <string name="calcButton_6">6</string>
+    <string name="calcButton_7">7</string>
+    <string name="calcButton_8">8</string>
+    <string name="calcButton_9">9</string>
+
+
+</resources>

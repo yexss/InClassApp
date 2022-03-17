@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Calculator3_14Activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textInput"
+        android:textSize="50sp"
+        android:gravity="right"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlHardcoded" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/button_rem"
+            android:text="@string/calcButton_rem"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_div"
+            android:text="@string/calcButton_div"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_clr"
+            android:text="@string/calcButton_clr"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_back"
+            android:text="@string/calcButton_back"
+            style="@style/calcBtn"/>
+
+
+        <Button
+            android:id="@+id/button_7"
+            android:text="@string/calcButton_7"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_8"
+            android:text="@string/calcButton_8"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_9"
+            android:text="@string/calcButton_9"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_mul"
+            android:text="@string/calcButton_mul"
+            style="@style/calcBtn"/>
+
+
+        <Button
+            android:id="@+id/button_4"
+            android:text="@string/calcButton_4"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_5"
+            android:text="@string/calcButton_5"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_6"
+            android:text="@string/calcButton_6"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_sub"
+            android:text="@string/calcButton_sub"
+            style="@style/calcBtn"/>
+
+
+        <Button
+            android:id="@+id/button_3"
+            android:text="@string/calcButton_3"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_2"
+            android:text="@string/calcButton_2"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_1"
+            android:text="@string/calcButton_1"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_add"
+            android:text="@string/calcButton_add"
+            style="@style/calcBtn"/>
+
+
+        <Button
+            android:id="@+id/button_pow"
+            android:text="@string/calcButton_pow"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_0"
+            android:text="@string/calcButton_0"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_dec"
+            android:text="@string/calcButton_dec"
+            style="@style/calcBtn"/>
+        <Button
+            android:id="@+id/button_eq"
+            android:text="@string/calcButton_eq"
+            style="@style/calcBtn"/>
+
+    </GridLayout>
+
+</LinearLayout>
