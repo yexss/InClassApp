@@ -11,14 +11,21 @@
         android:theme="@style/Theme.InClassApp">
         <activity
             android:name=".Question3_21Activity"
-            android:exported="true">
+            android:exported="false">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <activity android:name=".Form3_14Activity" />
+        <activity android:name=".LifecycleActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Form3_14Activity" />
     </application>
 
 </manifest>
