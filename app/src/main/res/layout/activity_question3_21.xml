@@ -8,9 +8,10 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/question"
-        android:text="abcd1231342"
-        android:textSize="30sp"
+        android:id="@+id/questionTextView"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -41,8 +42,11 @@
 
 
     <Button
-        android:id="@+id/NEXT"
+        android:id="@+id/btnNext"
         android:text="@string/next"
+        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

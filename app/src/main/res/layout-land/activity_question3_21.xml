@@ -7,15 +7,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <Space
         android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
     <TextView
-        android:id="@+id/question"
-        android:text="abcd1231342"
-        android:textSize="30sp"
+        android:id="@+id/questionTextView"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -23,7 +24,6 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -46,16 +46,14 @@
 
     <LinearLayout
         android:id="@+id/content"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="bottom"
-        android:orientation="vertical">
+        android:gravity="bottom|end">
 
         <Button
-            android:id="@+id/NEXT"
+            android:id="@+id/btnNext"
             android:text="@string/next"
-            android:layout_gravity="bottom|right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
