@@ -81,7 +81,6 @@ public class Calculator3_14Activity extends AppCompatActivity implements View.On
                 binding.textInput.append("0");
                 break;
             case R.id.button_1:
-                Log.e("1", "onClick: ");
                 binding.textInput.append("1");
                 break;
             case R.id.button_2:
