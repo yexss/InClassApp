@@ -3,17 +3,61 @@ package com.xhr.inclassapp;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.xhr.inclassapp.databinding.ActivityBmi314Binding;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+
 
 public class Bmi3_14Activity extends AppCompatActivity {
 
     private ActivityBmi314Binding binding;
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.bmimenu, menu);
+//        menu.add(Menu.NONE, R.id.clear_weight, 1, "清楚体重");
+        setIconsVisible(menu);
+        return true;
+    }
+
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.clear_weight:
+                binding.weight.setText("");
+                return true;
+            case R.id.clear_height:
+                binding.height.setText("");
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void setIconsVisible(Menu menu) {
+        if(menu!=null){
+            try {
+                Method method=menu.getClass().getDeclaredMethod("setOptionalIconsVisible",Boolean.TYPE);
+                method.setAccessible(true);
+                method.invoke(menu, true);
+            } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
     @SuppressLint("SetTextI18n")
     @Override
