@@ -33,4 +33,7 @@
     <string name="login_failed">"Login failed"</string>
     <string name="clear_height">clear height</string>
     <string name="clear_weight">clear weight</string>
+    <string name="cheat">CHEAT !</string>
+    <string name="sure">Are you sure you want to do this?</string>
+    <string name="show_answer">SHOW ANSWER</string>
 </resources>

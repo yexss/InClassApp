@@ -10,27 +10,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InClassApp">
         <activity
-            android:name=".Question3_21Activity"
-            android:exported="false"
-            android:configChanges="orientation|keyboardHidden|screenSize">
-        </activity>
-        <activity android:name=".Form3_14Activity" />
-        <activity android:name=".LifecycleActivity"
-            android:exported="false"
-            android:configChanges="orientation|keyboardHidden|screenSize">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-        </activity>
+            android:name=".Cheat3_31Activity"
+            android:exported="false" />
         <activity
-            android:name=".Bmi3_14Activity"
+            android:name=".Question3_31Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Jumpfun3_28Activity"
+            android:exported="false" />
+        <activity
+            android:name=".IntentSecond3_28Activity"
+            android:exported="false" />
+        <activity
+            android:name=".IntentMain3_28Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Question3_21Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false" />
+        <activity android:name=".Form3_14Activity" />
+        <activity
+            android:name=".LifecycleActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".Bmi3_14Activity"
+            android:exported="false" />
     </application>
 
 </manifest>
