@@ -22,14 +22,16 @@ public class Cheat3_31Activity extends AppCompatActivity {
         Intent intent = getIntent();
         String answer=intent.getStringExtra("answer");
 
-        binding.btnShow.setOnClickListener(v -> {
-            binding.answer.setText(answer.toUpperCase(Locale.ROOT));
-
+        binding.btnShow.setOnLongClickListener(v -> {
             final Intent returnIntent=new Intent();
             returnIntent.putExtra("flag",true);
             setResult(RESULT_OK,returnIntent);
             finish();
+            return false;
+        });
 
+        binding.btnShow.setOnClickListener(v -> {
+            binding.answer.setText(answer.toUpperCase(Locale.ROOT));
         });
     }
 }

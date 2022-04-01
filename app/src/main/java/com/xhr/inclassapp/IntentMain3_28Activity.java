@@ -106,7 +106,6 @@ public class IntentMain3_28Activity extends AppCompatActivity implements View.On
 
     //自定义的ActivityResultContract
     class MyResultContract extends ActivityResultContract<String,String>{
-
         @NonNull
         @Override
         public Intent createIntent(@NonNull Context context, String input) {
