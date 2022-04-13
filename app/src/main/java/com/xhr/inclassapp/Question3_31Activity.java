@@ -80,7 +80,7 @@ public class Question3_31Activity extends AppCompatActivity implements View.OnCl
                 break;
             case R.id.btnCheat:
                 final Intent intent = new Intent(Question3_31Activity.this, Cheat3_31Activity.class);
-                intent.putExtra("answer", String.valueOf(questions.get(currentIndex).isAnswer()));
+                intent.putExtra(Question4_10ViewModelActivity.EXTRA_ANSWER_IS_TRUE, String.valueOf(questions.get(currentIndex).isAnswer()));
                 launcher.launch(intent);
         }
     }
@@ -91,7 +91,7 @@ public class Question3_31Activity extends AppCompatActivity implements View.OnCl
                 if(result.getResultCode()==RESULT_OK){
                     final Intent data=result.getData();
                     if(data!=null){
-                        isCheat=data.getBooleanExtra("flag",true);
+                        isCheat=data.getBooleanExtra(Cheat3_31Activity.EXTRA_ANSWER_SHOWN,true);
                     }
                 }
             }

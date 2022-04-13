@@ -10,10 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InClassApp">
         <activity
-            android:name=".Cheat3_31Activity"
-            android:exported="false" />
-        <activity
-            android:name=".Question3_31Activity"
+            android:name=".Question4_10ViewModelActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,26 +18,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Jumpfun3_28Activity"
-            android:exported="false" />
-        <activity
-            android:name=".IntentSecond3_28Activity"
-            android:exported="false" />
-        <activity
-            android:name=".IntentMain3_28Activity"
-            android:exported="false" />
-        <activity
             android:name=".Question3_21Activity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false" />
-        <activity android:name=".Form3_14Activity" />
         <activity
             android:name=".LifecycleActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false" />
-        <activity
-            android:name=".Bmi3_14Activity"
-            android:exported="false" />
+        <activity android:name=".Cheat3_31Activity" />
+        <activity android:name=".Question3_31Activity" />
+        <activity android:name=".Jumpfun3_28Activity" />
+        <activity android:name=".IntentSecond3_28Activity" />
+        <activity android:name=".IntentMain3_28Activity" />
+        <activity android:name=".Form3_14Activity" />
+        <activity android:name=".Bmi3_14Activity" />
     </application>
 
 </manifest>
