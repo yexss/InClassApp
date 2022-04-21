@@ -87,9 +87,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
     <ImageView
         android:id="@+id/imageView"

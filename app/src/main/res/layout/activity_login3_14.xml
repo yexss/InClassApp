@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    tools:context=".Login3_14Activity"
-    android:gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login3_14Activity">
 
     <ImageView
-        android:src="@drawable/ic_dds"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:maxWidth="100dp"
         android:maxHeight="100dp"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_dds" />
 
 
     <LinearLayout
@@ -26,11 +26,11 @@
 
         <EditText
             android:id="@+id/username"
-            android:hint="input username"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableStart="@drawable/ic_baseline_accessible_forward_24"
             android:drawablePadding="30dp"
+            android:hint="input username"
             android:inputType="text"
             android:textColor="@color/black"
             android:textColorHint="#95a1aa" />
@@ -38,11 +38,11 @@
 
         <EditText
             android:id="@+id/password"
-            android:hint="input password"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:drawableStart="@drawable/ic_baseline_airline_seat_recline_extra_24"
             android:drawablePadding="30dp"
+            android:hint="input password"
             android:inputType="textPassword"
             android:textColor="@color/black"
             android:textColorHint="#95a1aa" />
@@ -51,10 +51,10 @@
 
     <Button
         android:id="@+id/submit"
-        android:text="@string/submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginRight="20dp"
+        android:text="@string/submit" />
 
 </LinearLayout>
