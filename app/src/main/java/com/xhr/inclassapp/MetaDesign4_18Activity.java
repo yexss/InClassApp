@@ -10,8 +10,11 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationBarView;
+import com.google.android.material.snackbar.Snackbar;
 import com.xhr.inclassapp.databinding.ActivityMetaDesign418Binding;
 
 public class MetaDesign4_18Activity extends AppCompatActivity {
@@ -50,7 +53,7 @@ public class MetaDesign4_18Activity extends AppCompatActivity {
         setSupportActionBar(binding.toolbar); // 界面主题设成NoActionBar
 
         // 配置viewPager适配器
-        binding.navgation.setOnItemSelectedListener(navListener);
+        binding.navigation.setOnItemSelectedListener(navListener);
         final MainViewPageAdapter viewPageAdapter=new MainViewPageAdapter(this);
         binding.viewPager.setAdapter(viewPageAdapter);
         binding.viewPager.setOffscreenPageLimit(viewPageAdapter.getItemCount()-1);
@@ -61,10 +64,20 @@ public class MetaDesign4_18Activity extends AppCompatActivity {
         binding.viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
-                binding.navgation.getMenu().getItem(position).setChecked(true);
+                binding.navigation.getMenu().getItem(position).setChecked(true);
             }
         });
 
+    }
+
+    public void onFABClick(View view) {
+        showSnackBarMsg("FAB button clicked");
+    }
+
+    private void showSnackBarMsg(String message) {
+        Snackbar snackbar=Snackbar.make(binding.coordinatorLayout, message, Snackbar.LENGTH_LONG);
+        snackbar.setAction("OK", view -> snackbar.dismiss());
+        snackbar.show();
     }
 
     private static class MainViewPageAdapter extends FragmentStateAdapter{
