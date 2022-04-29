@@ -33,22 +33,22 @@ public class Dashboard4_18Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding=FragmentDashboard418Binding.inflate(inflater,container,false);
+        binding = FragmentDashboard418Binding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        DashboardPageAdapter adapter=new DashboardPageAdapter(this);
+        DashboardPageAdapter adapter = new DashboardPageAdapter(this);
         binding.viewPager.setAdapter(adapter);
-        binding.viewPager.setOffscreenPageLimit(adapter.getItemCount()-1);
+        binding.viewPager.setOffscreenPageLimit(adapter.getItemCount() - 1);
 
         // 将tablayout与viewpager进行关联
-        new TabLayoutMediator(binding.tabsDashboard, binding.viewPager, (tab, position) -> tab.setText("dash"+position)).attach();
+        new TabLayoutMediator(binding.tabsDashboard, binding.viewPager, (tab, position) -> tab.setText("dash" + position)).attach();
     }
 
-    private static class DashboardPageAdapter extends FragmentStateAdapter{
+    private static class DashboardPageAdapter extends FragmentStateAdapter {
 
         public DashboardPageAdapter(@NonNull Fragment fragment) {
             super(fragment);
