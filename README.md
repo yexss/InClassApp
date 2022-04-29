@@ -1,5 +1,91 @@
 # InClassApp
 
+
+# Design Meta Work
+
+## 完善DashboardFragment界面的TabLs的背景色与colorPrimary一致
+
+<ol>
+    <li>在theme.xml文件里面写好TabLs样式</li>
+    <li>DashboardFragment.xml文件里面的TabLayout链接上Theme.TabLs</li>
+</ol>
+
+```xml
+    <item name="tabBackground">@color/purple_500</item>
+    <item name="tabIndicatorColor">#3D87FB</item>
+    <item name="tabIndicatorHeight">2dp</item>
+    <item name="tabTextAppearance">@style/TextAppearance.Design.Tab</item>
+    <item name="tabSelectedTextColor">#FFFFFF</item>
+```
+
+```xml
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.InClassApp"/>
+```
+
+## 切换页面时，Toolbar显示底部导航的标题
+主activity方法里面NavigationBarView监听器换页面就重设toolbar标题
+```java
+private final NavigationBarView.OnItemSelectedListener navListener = new NavigationBarView.OnItemSelectedListener() {
+    @SuppressLint("NonConstantResourceId")
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.navgation_home:
+                binding.viewPager.setCurrentItem(0);
+                binding.toolbar.setTitle(R.string.title_home);
+                return true;
+            case R.id.navgation_dashboard:
+                binding.viewPager.setCurrentItem(1);
+                binding.toolbar.setTitle(R.string.title_dashboard);
+                return true;
+            case R.id.navgation_notification:
+                binding.viewPager.setCurrentItem(2);
+                binding.toolbar.setTitle(R.string.title_notification;
+                return true;
+        }
+        return false;
+    }
+};
+```
+
+## 给Toolbar添加菜单，完成菜单项选择后的Snackbar提示
+
+<ol>
+    <li>menu文件夹里面新建一个design_meta_menu.xml文件</li>
+    <li>主activity方法里面写构造器与监听器</li>
+</ol>
+
+构造器
+```java
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+    MenuInflater inflater = getMenuInflater();
+    inflater.inflate(R.menu.meta_design_menu,menu);
+    return true;
+}
+```
+监听器
+```java
+@Override
+public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+    if(item.getItemId()==R.id.popup){
+        showSnackBarMsg("pop option menu clicked");
+        return true;
+    }
+    return super.onOptionsItemSelected(item);
+}
+```
+
+<br>
+
+
+
+
+
 # 菜单
 
 ## 使用xml定义菜单
