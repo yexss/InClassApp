@@ -4,17 +4,23 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/drawable/ic_baseline_accessible_forward_24.xml" value="0.2445" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.119" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.2445" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2445" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1855" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/drawable/item_selector.xml" value="0.1265" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout-land/activity_question3_21.xml" value="0.23148148148148148" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_abcd.xml" value="0.1" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_bim3_14.xml" value="0.20108695652173914" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_bmi3_14.xml" value="0.20108695652173914" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_calculator3_14.xml" value="0.25" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_cheat331.xml" value="0.25" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_crime413.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_data411.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_dialog411.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_first.xml" value="0.23867753623188406" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_form3_14.xml" value="0.19610507246376813" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_fragdemo4_4.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_intent_main328.xml" value="0.23867753623188406" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_intent_second328.xml" value="0.23867753623188406" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_jumpfun328.xml" value="0.13297872340425532" />
@@ -25,16 +31,26 @@
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_question3_21.xml" value="0.23867753623188406" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_question410_view_model.xml" value="0.23550724637681159" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_second.xml" value="0.23867753623188406" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_sqlite52.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/activity_student_update52.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/content4_25main.xml" value="0.21195652173913043" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/dialog_date_picker4_13.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/dialog_login.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/fragment_blank4_4.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/fragment_content4_11.xml" value="0.115625" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/fragment_crime4_4.xml" value="0.335" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/fragment_dashboard4_18.xml" value="0.25" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/fragment_dashboard_child4_18.xml" value="0.19927536231884058" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/fragment_home4_18.xml" value="0.1" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/fragment_notification4_18.xml" value="0.1" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/fragment_title4_11.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/item5_2student.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/nav_header4_25main.xml" value="0.21195652173913043" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/nav_header_main.xml" value="0.21195652173913043" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/layout/toolbar5_2layout.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/menu/activity_main_drawer.xml" value="0.2734375" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/menu/bmimenu.xml" value="0.2734375" />
+        <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/menu/menu_student.xml" value="0.1" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/menu/meta_design_menu.xml" value="0.1" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/app/src/main/res/menu/navigation.xml" value="0.2734375" />
         <entry key="..\:/Users/10354/Documents/Code/AndroidStudioProjects/InClassApp/metadesignapp/src/main/res/layout/activity_main.xml" value="0.21195652173913043" />

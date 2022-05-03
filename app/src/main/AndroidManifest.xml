@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xhr.inclassapp" >
+    package="com.xhr.inclassapp">
 
     <application
         android:allowBackup="true"
@@ -8,20 +8,37 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InClassApp" >
+        android:theme="@style/Theme.InClassApp">
         <activity
-            android:name=".MetaDesign4_18Activity"
-            android:exported="true" >
+            android:name=".StudentUpdate5_2Activity"
+            android:parentActivityName=".SQLite5_2Activity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".SQLite5_2Activity"-->
+<!--            android:exported="true"-->
+<!--            android:theme="@style/Theme.NoActionBar">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <activity android:name=".MetaDesign4_18Activity" android:theme="@style/Theme.MetaDesign" />
+        <activity
+            android:name=".Crime4_13Activity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".Dialog4_11Activity" />
+        <activity android:name=".Data4_11Activity" />
+        <activity android:name=".FragDemo4_4Activity" />
         <activity android:name=".Question4_10ViewModelActivity" />
-        <activity android:name=".Question3_21Activity" />
-<!--        android:configChanges="orientation|keyboardHidden|screenSize"-->
+        <activity android:name=".Question3_21Activity" /> <!-- android:configChanges="orientation|keyboardHidden|screenSize" -->
         <activity android:name=".LifecycleActivity" />
         <activity android:name=".Cheat3_31Activity" />
         <activity android:name=".Question3_31Activity" />

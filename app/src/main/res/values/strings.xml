@@ -54,4 +54,12 @@
     <string name="menu_gallery">画廊</string>
     <string name="menu_slideshow">幻灯</string>
     <string name="option">选项</string>
+
+
+    <string-array name="student_arr">
+        <item>软件2118</item>
+        <item>软件2128</item>
+        <item>软件2136</item>
+        <item>软件2116</item>
+    </string-array>
 </resources>

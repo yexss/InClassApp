@@ -10,10 +10,10 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
-public class BottomFABBehavior extends CoordinatorLayout.Behavior<FloatingActionButton> {
+public class BottomFAB4_18Behavior extends CoordinatorLayout.Behavior<FloatingActionButton> {
 
     // 在xml当中加载自定义的Behavior
-    public BottomFABBehavior(Context context, AttributeSet attrs) {
+    public BottomFAB4_18Behavior(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

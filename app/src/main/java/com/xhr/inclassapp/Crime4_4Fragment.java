@@ -1,12 +1,20 @@
 package com.xhr.inclassapp;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
+
+import com.xhr.inclassapp.DatePicker4_13Dialog;
+import com.xhr.inclassapp.databinding.FragmentCrime44Binding;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,50 +23,45 @@ import android.view.ViewGroup;
  */
 public class Crime4_4Fragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private FragmentCrime44Binding binding;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    public Crime4_4Fragment() { }
 
-    public Crime4_4Fragment() {
-        // Required empty public constructor
+    public static Crime4_4Fragment newInstance() {
+        return new Crime4_4Fragment();
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Crime4_4Fragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Crime4_4Fragment newInstance(String param1, String param2) {
-        Crime4_4Fragment fragment = new Crime4_4Fragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
+    @SuppressLint("SimpleDateFormat")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_crime4_4, container, false);
+        binding=FragmentCrime44Binding.inflate(inflater,container,false);
+        binding.detail.setText(new Date().toString());
+        binding.detail.setOnClickListener(view -> {
+            DatePicker4_13Dialog dlg=new DatePicker4_13Dialog();
+            dlg.show(getChildFragmentManager(),"选择");
+        });
+
+        getChildFragmentManager().setFragmentResultListener(DatePicker4_13Dialog.SELECTED_DATE,this,(requestKey, result) -> {
+            int year=result.getInt(DatePicker4_13Dialog.SELECTED_YEAR);
+            int month=result.getInt(DatePicker4_13Dialog.SELECTED_MONTH)+1;
+            int day=result.getInt(DatePicker4_13Dialog.SELECTED_DAY);
+
+
+            Calendar instance = Calendar.getInstance();
+            String strTime = year+"-"+month+"-"+day;
+            Date date = null;
+            try {
+                date = new SimpleDateFormat("yyyy-MM-dd").parse(strTime);
+                assert date != null;
+                instance.setTime(date);//将时间对象data设置为新的日历
+                binding.detail.setText(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss E").format(instance.getTime()));
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        });
+
+        return binding.getRoot();
     }
 }

@@ -57,7 +57,7 @@
             app:fabSize="normal"
             app:layout_anchor="@id/navigation"
             app:layout_anchorGravity="top|end"
-            app:layout_behavior=".BottomFABBehavior"
+            app:layout_behavior=".BottomFAB4_18Behavior"
             app:useCompatPadding="true"
             tools:ignore="ContentDescription" />
 
