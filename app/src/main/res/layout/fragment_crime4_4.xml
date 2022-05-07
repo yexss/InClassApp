@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Crime4_4Fragment">
 
     <LinearLayout
@@ -24,7 +25,7 @@
             android:background="@color/cardview_dark_background"/>
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/title"
             android:hint="输入陋习的标题"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,6 +58,13 @@
             android:text="是否已解决"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:text="submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 

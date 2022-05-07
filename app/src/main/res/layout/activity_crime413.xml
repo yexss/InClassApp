@@ -6,12 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".Crime4_13Activity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_crime"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_crime4_4"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/recyclerView"
+        tools:layout="@layout/fragment_crime4_4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

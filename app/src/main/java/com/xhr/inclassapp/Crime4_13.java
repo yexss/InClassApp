@@ -1,8 +1,12 @@
 package com.xhr.inclassapp;
 
+import androidx.annotation.NonNull;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
 
-public class Crime4_13 {
+public class Crime4_13 implements Serializable {
     private String title;
     private Integer id;
     private Date date;
@@ -40,5 +44,16 @@ public class Crime4_13 {
 
     public void setSolved(boolean solved) {
         isSolved = solved;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "Crime4_13{" +
+                "title='" + title + '\'' +
+                ", id=" + id +
+                ", date=" + date +
+                ", isSolved=" + isSolved +
+                '}';
     }
 }
