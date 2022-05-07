@@ -1,24 +1,30 @@
 package com.xhr.inclassapp;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.xhr.inclassapp.databinding.Item52studentBinding;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class Student5_2Adapter extends RecyclerView.Adapter<Student5_2Adapter.ViewHolder> {
 
-    private List<Student5_2> students;
+    private final List<Student5_2> students;
+    private final List<Student5_2> studentsAll;
     private int currentIndex = 0;
     private View.OnClickListener onClickListener;
 
     public Student5_2Adapter(List<Student5_2> students) {
         this.students = students;
+        this.studentsAll = new ArrayList<>(students);
     }
 
     @NonNull
@@ -64,4 +70,41 @@ public class Student5_2Adapter extends RecyclerView.Adapter<Student5_2Adapter.Vi
             this.itemView.setOnClickListener(onClickListener);
         }
     }
+
+    public Filter getFilter() {
+        return filter;
+    }
+
+    private final Filter filter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence charSequence) {
+            List<Student5_2> filteredList = new ArrayList<>();
+            final String kw=charSequence.toString().toLowerCase();
+
+            if (kw.isEmpty()) {
+                // 查询字符串为空，则恢复所有数据
+                filteredList.addAll(studentsAll);
+            }else{
+                // 查询字符串不为空，则搜索符合条件的记录
+                for (Student5_2 student : students) {
+                    if (student.getName().toLowerCase().contains(kw)
+                            || student.getClassmate().toLowerCase().contains(kw)
+                            || String.valueOf(student.getAge()).contains(kw)) {
+                        filteredList.add(student);
+                    }
+                }
+            }
+            FilterResults filterResults=new FilterResults();
+            filterResults.values=filteredList;
+            return filterResults;
+        }
+        
+        @SuppressLint("NotifyDataSetChanged")
+        @Override
+        protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+            students.clear();
+            students.addAll((Collection<? extends Student5_2>) filterResults.values);
+            notifyDataSetChanged();
+        }
+    };
 }

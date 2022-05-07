@@ -1,5 +1,7 @@
 package com.xhr.inclassapp;
 
+import androidx.annotation.NonNull;
+
 import java.io.Serializable;
 
 public class Student5_2 implements Serializable {
@@ -47,5 +49,16 @@ public class Student5_2 implements Serializable {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return "Student5_2{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", classmate='" + classmate + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

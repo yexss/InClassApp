@@ -9,28 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InClassApp">
-        <activity
-            android:name=".StudentUpdate5_2Activity"
-            android:parentActivityName=".SQLite5_2Activity"
-            android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".SQLite5_2Activity"-->
-<!--            android:exported="true"-->
-<!--            android:theme="@style/Theme.NoActionBar">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-
+        <activity android:name=".StudentUpdate5_2Activity" android:parentActivityName=".SQLite5_2Activity" />
+        <activity android:name=".SQLite5_2Activity" android:theme="@style/Theme.NoActionBar" />
         <activity android:name=".MetaDesign4_18Activity" android:theme="@style/Theme.MetaDesign" />
-        <activity
-            android:name=".Crime4_13Activity"
+        <activity android:name=".Crime4_13Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

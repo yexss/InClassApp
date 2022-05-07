@@ -18,6 +18,9 @@ public class Crime4_13Activity extends AppCompatActivity {
         binding=ActivityCrime413Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
+
+
         Crime4_4Fragment crime4_4Fragment=new Crime4_4Fragment();
         manager.beginTransaction()
                 .replace(R.id.fragment_crime,crime4_4Fragment)
