@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_crime"
+    app:startDestination="@id/crimeList5_8Fragment">
+
+    <fragment
+        android:id="@+id/crime4_4Fragment"
+        android:name="com.xhr.inclassapp.Crime4_4Fragment"
+        android:label="fragment_crime4_4"
+        tools:layout="@layout/fragment_crime4_4">
+        <action
+            android:id="@+id/action_CrimeFragment_to_ListFragment"
+            app:destination="@+id/crimeList5_8Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/crimeList5_8Fragment"
+        android:name="com.xhr.inclassapp.CrimeList5_8Fragment"
+        android:label="fragment_crime_list5_8"
+        tools:layout="@layout/fragment_crime_list5_8">
+        <action
+            android:id="@+id/action_ListFragment_to_CrimeFragment"
+            app:destination="@+id/crime4_4Fragment"/>
+    </fragment>
+
+</navigation>

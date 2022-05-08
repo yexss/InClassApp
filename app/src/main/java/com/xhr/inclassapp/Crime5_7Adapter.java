@@ -33,6 +33,7 @@ public class Crime5_7Adapter extends RecyclerView.Adapter<Crime5_7Adapter.ViewHo
         final Crime4_13 crime=crimes.get(position);
         holder.binding.title.setText(crime.getTitle());
         holder.binding.time.setText(crime.getDate().toString());
+        holder.binding.icon.setVisibility(crime.isSolved() ? View.INVISIBLE : View.VISIBLE);
         holder.itemView.setSelected(currentIndex==position);
     }
 
