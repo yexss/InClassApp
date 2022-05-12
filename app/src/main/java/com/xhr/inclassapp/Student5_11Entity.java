@@ -7,14 +7,14 @@ import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
-public class Student5_2 implements Serializable {
+@Entity(tableName = "stu_room")
+public class Student5_11Entity implements Serializable {
+    @PrimaryKey(autoGenerate = true)
     private int id;
+    @ColumnInfo(name = "student_name")
     private String name;
     private String classmate;
     private int age;
-
-    public Student5_2() {
-    }
 
     public int getId() {
         return id;
@@ -51,7 +51,7 @@ public class Student5_2 implements Serializable {
     @NonNull
     @Override
     public String toString() {
-        return "Student5_2{" +
+        return "Student5_11Entity{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", classmate='" + classmate + '\'' +

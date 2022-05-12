@@ -13,12 +13,15 @@ public class StudentUpdate5_2Activity extends AppCompatActivity {
     private ActivityStudentUpdate52Binding binding;
     private Student5_2 currentStudent;
     private boolean isUpdate = false;
+    private StudentDAO5_9 studentDAO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityStudentUpdate52Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        studentDAO = new StudentDAO5_9(this);
 
         final Intent intent = getIntent();
         final Bundle bundle = intent.getExtras();
@@ -45,6 +48,15 @@ public class StudentUpdate5_2Activity extends AppCompatActivity {
             student.setName(binding.etName.getText().toString());
             student.setAge(Integer.parseInt(binding.etAge.getText().toString()));
             student.setClassmate(binding.spClassmate.getSelectedItem().toString());
+
+            if (isUpdate) {
+                // setId
+                student.setId(currentStudent.getId());
+                studentDAO.update(student);
+            } else {
+                int id = studentDAO.insert(student);
+                student.setId(id);
+            }
 
             final Intent backIntent = new Intent();
             final Bundle backBundle = new Bundle();
