@@ -39,11 +39,11 @@ public class StudentRepository5_11 {
         return studentDao.getAll();
     }
 
-//    public List<Student5_11Entity> getAll(String kw){
-//        if (kw == null || kw.isEmpty()) {
-//            return studentDao.getAll();
-//        }
-//        return studentDao.getAll("kw");
-//    }
+    public List<Student5_11Entity> getAll(String kw){
+        if (kw == null || kw.isEmpty()) {
+            return studentDao.getAll();
+        }
+        return studentDao.getAll(kw);
+    }
 
 }

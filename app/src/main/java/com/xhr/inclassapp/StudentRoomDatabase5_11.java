@@ -30,7 +30,8 @@ public abstract class StudentRoomDatabase5_11 extends RoomDatabase {
             synchronized (StudentRoomDatabase5_11.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            StudentRoomDatabase5_11.class, "student_database")
+                            StudentRoomDatabase5_11.class, StudentRoomDatabase5_11.DB_NAME)
+                            .allowMainThreadQueries()
                             .build();
                 }
             }

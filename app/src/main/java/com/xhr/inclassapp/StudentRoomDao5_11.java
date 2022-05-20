@@ -14,8 +14,8 @@ public interface StudentRoomDao5_11 {
     @Query("select * from stu_room")
     List<Student5_11Entity> getAll();
 
-//    @Query("select * from stu_room where student_name like '%'||:kw||'%' or classmate like '%'||:kw||'%'")
-//    List<Student5_11Entity> getAll(String kw);
+    @Query("select * from stu_room where student_name like '%'||:kw||'%' or classmate like '%'||:kw||'%'")
+    List<Student5_11Entity> getAll(String kw);
 
 
     @Insert
